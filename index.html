@@ -53,7 +53,7 @@
     <br>
     <br>
     <!--Order-->
-    <div class="container-fluid">
+    <div class="container">
         <h1 class="text-center"><strong>Make your Orders NOW for Delivery.</strong></h1>
         <form>
             <div class="form-group text-center myform"> 
@@ -71,7 +71,7 @@
 
                 <!--preferred size-->
                 <div class="form-group text-center myform">
-                    <label for="choose your preferred size"><b>Preferred size</b></label>
+                    <label for="chooseyourpreferredsize"><b>Preferred size</b></label>
                     <select class="form-control" id="pizzasize">
                         <option><b>which size do you preffer?</b></option>
                         <option value="400"><b>Small @ Ksh 400</b></option>
@@ -79,10 +79,35 @@
                         <option value="1600"><b>Large @ Ksh 1600</b></option>
                     </select>
                 </div>
-
                 <!--favorite crust-->
+                <div class="form-group text-center myform">
+                    <label for="chooseyourfavorite crust"><b>Preferred Crust</b></label>
+                    <select class="form-control" id="pizzacrust">
+                        <option><b>choose your favorite crust</b></option>
+                        <option value="80"><b>Thin Crust @ Ksh 80</b></option>
+                        <option value="120"><b>Thick Crust @ Ksh 120</b></option>
+                        <option value="180"><b>Gluten-free crust @ Ksh 180</b></option>
+                        <option value="250"><b>Stuffed crust @ Ksh 250</b></option>
+                    </select>
+                </div>
                 <!--favorite toppings-->
+                <div class="form-group text-center myform">
+                    <label for="chooseyourfavoritetoppings"><b>Favorite Topping</b></label>
+                    <select class="form-control" id="pizzatopping">
+                        <option><b>Choose your favorite topping</b></option>
+                        <option value="180"><b>Mushroom @ Ksh 180</b></option>
+                        <option value="200"><b>Onions @ Ksh 200</b></option>
+                        <option value="350"><b>Olives @ Ksh 350</b></option>
+                        <option value="300"><b>Bacon @ Ksh 300</b></option>
+                        <option value="350"><b>Periperi Chicken @ Ksh 220</b></option>
+                    </select>
+                </div> 
                 <!--number of pizza-->
+                <div class="form-group text-center myform">
+                    <label for="number"><b>Number of Pizza:</b></label>
+                    <input type="number" class="form-control" id="number" placeholder="Number of pizza" min="1" required>
+
+                </div>
         
         </form>
          
