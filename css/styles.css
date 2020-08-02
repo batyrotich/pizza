@@ -8,3 +8,16 @@ body{
     text-align: left;
     text-decoration: lightcoral;
 }
+.home {
+    height: auto;
+    width: auto;
+    background-image: url("../images/back1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hometext {
+    text-align: center;
+    color:greenyellow;
+    margin-top: 400px;
+    background-attachment: fixed;
+}
