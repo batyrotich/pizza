@@ -1,7 +1,10 @@
 body{
     background-color: grey;
 }
-.container h3{
-    text-align: center;
-    text-decoration: indianred;
+.navbar-nav{
+    padding: 4%;
+}
+.navbar-nav a{
+    text-align: left;
+    text-decoration: lightcoral;
 }
