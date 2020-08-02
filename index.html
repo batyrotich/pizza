@@ -15,10 +15,10 @@
             <a class="navbar-brand" href="#">PIZZA-INN</a>
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">MENU</a>
-                    <a class="nav-item nav-link" href="#">ORDER</a>
-                    <a class="nav-item nav-link" href="#">CONTACT US</a> 
-                    <a class="nav-item nav-link" href="#">ABOUT US</a>
+                    <a class="nav-item nav-link" href="#"><strong>MENU</strong></a>
+                    <a class="nav-item nav-link" href="#"><strong>ORDER</strong></a>
+                    <a class="nav-item nav-link" href="#"><strong>CONTACT US</strong></a> 
+                    <a class="nav-item nav-link" href="#"><strong>ABOUT US</strong></a>
                 </div>
         </nav>
     </div>
@@ -26,29 +26,56 @@
     <div class="row home">
         <div class="col-md-12 hometext">
             <h1 class="display-4">WELCOME <br><br> TO PIZZA INN RESTAURANT</h1>
-            <p><strong>WE CREATE LOVE && WE CREATE FOOD. ALWAYS SATISFYING YOUR PIZZA TASTE.</strong></p>
+            <marquee><strong>WE CREATE LOVE && WE CREATE FOOD. ALWAYS SATISFYING YOUR PIZZA TASTE.</strong></marquee>
         </div>
     </div>
+    <br>
+    <br>
         <div class="menu">
             <div class="size">
-                <h1><strong>Pizza Comes in different sizes: small, medium and large.</strong></h1>
+                <h1 class="text-center"><strong>Pizza Comes in different sizes: small, medium and large.</strong></h1>
             </div>
         </div>
     <div class="row" id="pizzasizes">
         <div class="col-md-4">
             <img src="images/small.jpg" height="350px" width="350px">
-            <p><strong>size of:1/4 kgs @ Ksh.400</strong></p>
+            <p><strong> Small size of:1/4 kgs @ Ksh.400</strong></p>
         </div>
         <div class="col-md-4">
             <img src="images/medium.jpg" height="350px" width="350px">
-            <p><strong>size of 1/2 Kgs @ Ksh.800</strong></p>
+            <p><strong> Medium size of 1/2 Kgs @ Ksh.800</strong></p>
         </div>
         <div class="col-md-4">
             <img src="images/large.jpg"  height="350px" width="350px">
-            <p><strong>size of:1 Kg @ Ksh. 1600</strong></p>
+            <p><strong> Large size of:1 Kg @ Ksh. 1600</strong></p>
         </div>
     </div>
-    
+    <br>
+    <br>
+    <!--Order-->
+    <div class="container-fluid">
+        <h1 class="text-center"><strong>Make your Orders NOW for Delivery.</strong></h1>
+        <form>
+            <div class="form-group text-center myform"> 
+                <!--preferred flavour-->
+                <label for="select your pizza flavor"><b>Pizza Flavor:</b></label>
+                <select class="form-control" id="pizzaflavor">
+                    <option><b>select pizza flavor</b></option>
+                    <option value="430"><b>Hawaiian @ Ksh 430</b></option>
+                    <option value="500"><b>Peri-peri Chicken @ Ksh 500</b></option>
+                    <option value="420"><b>Chicken Tikka @ Ksh 420</b></option>
+                    <option value="350"><b>Vegetable Tikka @ Ksh 350</b></option>
+                    <option value="450"><b>Butternut Squash @ Ksh 450</b></option>
+                </select>
+                <!--preferred size-->
+                <!--favorite crust-->
+                <!--favorite toppings-->
+                <!--number of pizza-->
+            </div>
+        </form>
+         
+    </div>
+
    
  
 </body>
