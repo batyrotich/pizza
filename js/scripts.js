@@ -61,7 +61,7 @@ function getAmount(flavour, size, crust, topping, number) {
     prompt("Enter your location");
     prompt("Enter your name");
     prompt("Enter your phone number");
-    alert("Your order will be delivered in a while, delivery fee is  Ksh.150/=");
+    alert("Your order will be delivered in a while, delivery fee is  Ksh. 200 ONLY.");
 }
 
 function getPick(flavour, size, crust, topping, number) {
@@ -72,7 +72,7 @@ function getPick(flavour, size, crust, topping, number) {
             parseInt(topping.val())) *
         parseInt(number.val());
     alert(
-        "You've ordered " +
+        "Your bucket list has: " +
         number.val() +
         " " +
         " pizza's, " +
@@ -84,9 +84,9 @@ function getPick(flavour, size, crust, topping, number) {
         "  " +
         topping.html() +
         "  " +
-        " which amounts to Ksh. " +
+        " Total at a cost of:Ksh. " +
         results +
-        "  Thanks for shopping with us  "
+        "  It was a pleasure serving you. Welcome Again!!  "
     );
 }
 $(document).ready(function () {
@@ -108,8 +108,19 @@ $(document).ready(function () {
         var crust = $("#pizzacrust :selected");
         var topping = $("#pizzatopping :selected");
         var number = $("#number");
-
         getPick(flavour, size, crust, topping, number);
         event.preventDefault();
     });
-}); 
+});
+//contact us
+$(document).ready(function(){
+    $("form").submit(function() {
+        var Name = $("#Name").val();
+        var Email = $("#Email").val();
+        var Message = $("#Message").val(); 
+
+if (Name == "" || Email == "" || Message == "") {
+    alert("Kindly Enter the form details correctly correctly!");
+} else alert(" Hello " + Name + "YOur Message Has been received and recorded successfully");
+});
+});
