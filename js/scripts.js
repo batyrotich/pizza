@@ -112,6 +112,7 @@ $(document).ready(function () {
         event.preventDefault();
     });
 });
+
 //contact us
 $(document).ready(function(){
     $("form").submit(function() {
