@@ -11,19 +11,19 @@
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">PIZZA-INN</a>
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#"><strong>MENU</strong></a>
-                    <a class="nav-item nav-link" href="#"><strong>ORDER</strong></a>
-                    <a class="nav-item nav-link" href="#"><strong>CONTACT US</strong></a> 
-                    <a class="nav-item nav-link" href="#"><strong>ABOUT US</strong></a>
-                </div>
-        </nav>
+        <div class="navbar">
+            <ul>
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#order">ORDER</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+            </ul>
+        </div>
+       
     </div>
     <!--home-->
-    <div class="row home">
+    <div class="row home" id="home">
         <div class="col-md-12 hometext">
             <h1 class="display-4">WELCOME <br><br> TO PIZZA INN RESTAURANT</h1>
             <marquee><strong>WE CREATE LOVE && WE CREATE FOOD. ALWAYS SATISFYING YOUR PIZZA TASTE.</strong></marquee>
@@ -130,8 +130,10 @@
     <br>
                
     <!--Contact us-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="contact">
         <h1 class="text-center"><strong>Contact Us</strong></h1>
+        <br>
+        
         <div class="container">
             <form action="https://formspree.io/mdowbzbn" method="POST">
                 <div class="row">
@@ -155,14 +157,18 @@
             </form>
         </div> 
     </div>
+    <br>
     <!--footer-->
-    <div class="footer">
-        <h4>PIZZA WEBSITE 2020</h4>
-        <br> 
-        <h3>&COPY; chebeteddahrotich</h3>
-        <br>
-        <h3>email: eddahbaty98@gmail.com</h3>
-        <h3>phone: 0715017129</h3> 
-    </div>  
+    <div class="container" id="about">
+        <div class="footer">
+            <h4>PIZZA WEBSITE 2020</h4>
+            <h3>&COPY; chebeteddahrotich</h3>
+            <br>
+            <h3>email: eddahbaty98@gmail.com</h3>
+            <h3>phone: 0715017129</h3>
+        </div>
+
+    </div>
+    
 </body>
 </html>
